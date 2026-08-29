@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="需要予測・SQL分析・PoC・AWS／GCP上での実装支援を通じて、データをビジネスの意思決定につなげるデータサイエンティストのポートフォリオ。">
+    <title>Suisui Data Portfolio | 需要予測・データ分析</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">本文へ移動</a>
+
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="ページ上部へ">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span>SUISUI / ANALYTICS</span>
+      </a>
+      <nav aria-label="メインナビゲーション">
+        <a href="#services">Services</a>
+        <a href="#works">Works</a>
+        <a href="#profile">Profile</a>
+        <a class="nav-contact" href="mailto:iijima.suisuiaqua1101@gmail.com?subject=%E5%89%AF%E6%A5%AD%E6%A1%88%E4%BB%B6%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6%E3%81%AE%E3%81%94%E7%9B%B8%E8%AB%87">Contact <span aria-hidden="true">↗</span></a>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="hero" id="top">
+        <div class="hero-copy reveal">
+          <div class="status"><span aria-hidden="true"></span>副業案件のご相談受付中</div>
+          <p class="eyebrow">FREELANCE DATA SCIENCE</p>
+          <h1>予測を、<br><em>意思決定</em>まで。</h1>
+          <p class="hero-lead">
+            需要予測とデータ分析を中心に、課題整理からPoC、精度改善、
+            クラウド上での実装・運用まで。技術とビジネスをつなぎます。
+          </p>
+          <div class="hero-actions">
+            <a class="primary-button" href="mailto:iijima.suisuiaqua1101@gmail.com?subject=%E5%89%AF%E6%A5%AD%E6%A1%88%E4%BB%B6%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6%E3%81%AE%E3%81%94%E7%9B%B8%E8%AB%87">案件について相談する <span aria-hidden="true">↗</span></a>
+            <a class="text-link" href="#works">実績を見る <span aria-hidden="true">↓</span></a>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal reveal-delay" aria-label="分析プロセスのイメージ">
+          <div class="visual-head"><span>FORECAST / SIGNAL</span><span>LIVE</span></div>
+          <svg viewBox="0 0 560 300" role="img" aria-labelledby="chart-title chart-desc">
+            <title id="chart-title">実績値と予測値の推移</title>
+            <desc id="chart-desc">実績値に沿って予測値が推移するイメージグラフです。</desc>
+            <g class="grid-lines">
+              <line x1="20" y1="50" x2="540" y2="50"></line>
+              <line x1="20" y1="120" x2="540" y2="120"></line>
+              <line x1="20" y1="190" x2="540" y2="190"></line>
+              <line x1="20" y1="260" x2="540" y2="260"></line>
+            </g>
+            <polyline class="actual-line" points="20,236 74,222 128,229 182,180 236,191 290,135 344,148 398,88 452,105 506,57 540,69"></polyline>
+            <polyline class="forecast-line" points="20,244 74,229 128,214 182,192 236,177 290,151 344,132 398,104 452,89 506,72 540,55"></polyline>
+            <circle class="chart-point" cx="398" cy="104" r="6"></circle>
+            <line class="marker-line" x1="398" y1="36" x2="398" y2="268"></line>
+          </svg>
+          <div class="visual-foot">
+            <div><span class="legend actual"></span> 実績</div>
+            <div><span class="legend forecast"></span> 予測</div>
+            <p>MODEL → DATA → BUSINESS</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="principles" aria-label="仕事で重視する3つの視点">
+        <div><span>01</span><strong>Model</strong><p>精度だけでなく、使えるモデルを。</p></div>
+        <div><span>02</span><strong>Data</strong><p>制約まで理解し、正しく読み解く。</p></div>
+        <div><span>03</span><strong>Business</strong><p>分析結果を、次の判断につなげる。</p></div>
+      </section>
+
+      <section class="section section-dark" id="services">
+        <div class="section-heading" data-reveal>
+          <p class="section-index">01 / SERVICES</p>
+          <h2>データを使って、<br><span>前に進める。</span></h2>
+          <p>「何を分析すべきか」が曖昧な段階からでも、課題を整理し、現実的な進め方をご提案します。</p>
+        </div>
+        <div class="service-list" data-reveal>
+          <article class="service-card">
+            <span class="service-number">01</span>
+            <div><h3>需要予測・予測モデル開発</h3><p>売上・在庫・商品特性を整理し、目的に合う予測ロジックを設計。PoCから精度検証、改善まで対応します。</p><ul><li>Python</li><li>scikit-learn</li><li>Forecasting</li></ul></div>
+            <span class="card-arrow" aria-hidden="true">↗</span>
+          </article>
+          <article class="service-card">
+            <span class="service-number">02</span>
+            <div><h3>SQL分析・課題の可視化</h3><p>データ抽出や集計だけで終わらず、数値の変化を分解して原因を特定。次の意思決定につながる形で共有します。</p><ul><li>SQL</li><li>BigQuery</li><li>Visualization</li></ul></div>
+            <span class="card-arrow" aria-hidden="true">↗</span>
+          </article>
+          <article class="service-card">
+            <span class="service-number">03</span>
+            <div><h3>PoC・分析プロジェクト支援</h3><p>要件整理、仮説設計、検証、関係者との認識合わせまで伴走。技術と業務の間をつなぎます。</p><ul><li>PoC</li><li>GCP</li><li>Project Support</li></ul></div>
+            <span class="card-arrow" aria-hidden="true">↗</span>
+          </article>
+          <article class="service-card">
+            <span class="service-number">04</span>
+            <div><h3>クラウド・ML基盤支援</h3><p>AWS・GCP上でのデータ処理、モデル実行、コンテナ運用、CI/CDまで。分析を継続的に動かす仕組みづくりを支援します。</p><ul><li>AWS</li><li>GCP</li><li>MLOps</li></ul></div>
+            <span class="card-arrow" aria-hidden="true">↗</span>
+          </article>
+        </div>
+      </section>
+
+      <section class="section works" id="works">
+        <div class="section-heading compact" data-reveal>
+          <p class="section-index">02 / SELECTED WORKS</p>
+          <h2>実務で磨いた、<br><span>解く力。</span></h2>
+        </div>
+
+        <div class="case-study featured-case" data-reveal>
+          <div class="case-meta"><span>APPAREL / POC</span><span>01</span></div>
+          <div class="case-content">
+            <div><p class="case-label">CASE STUDY</p><h3>アパレル商品の<br>需要予測PoC</h3></div>
+            <div class="case-detail">
+              <p>販売速度と販売カーブをモデル化し、色・サイズの特性を補正。ビジネス側と検証条件をすり合わせながら、実用可能性を評価しました。</p>
+              <dl>
+                <div><dt>ROLE</dt><dd>設計 / モデリング / 検証</dd></div>
+                <div><dt>RESULT</dt><dd>検証条件下 MAE 約20–25%</dd></div>
+                <div><dt>POINT</dt><dd>精度と業務適用を両面評価</dd></div>
+              </dl>
+            </div>
+          </div>
+          <div class="case-chart" aria-hidden="true">
+            <span style="height:42%"></span><span style="height:65%"></span><span style="height:50%"></span><span style="height:82%"></span><span style="height:67%"></span><span style="height:91%"></span><span style="height:73%"></span><span style="height:96%"></span>
+          </div>
+        </div>
+
+        <div class="case-study secondary-case" data-reveal>
+          <div class="case-meta"><span>RETAIL / OPERATION</span><span>02</span></div>
+          <div class="case-content">
+            <div><p class="case-label">CASE STUDY</p><h3>小売需要予測の<br>運用・精度改善</h3></div>
+            <div class="case-detail">
+              <p>予測精度を継続的にモニタリングし、悪化要因をSQLで分解。データ・モデル・運用の観点から原因を切り分け、改善サイクルを支援しました。</p>
+              <dl>
+                <div><dt>ROLE</dt><dd>分析 / 原因調査 / 改善提案</dd></div>
+                <div><dt>OUTPUT</dt><dd>モニタリング・SQL分析</dd></div>
+                <div><dt>POINT</dt><dd>関係者との認識合わせまで担当</dd></div>
+              </dl>
+            </div>
+          </div>
+        </div>
+        <p class="confidential-note">※ 守秘義務に配慮し、企業名・商品名・業務上の機密情報は非公開としています。</p>
+      </section>
+
+      <section class="section process-section">
+        <div class="section-heading compact" data-reveal>
+          <p class="section-index">03 / APPROACH</p>
+          <h2>モデルを作る前に、<br><span>問いを整える。</span></h2>
+        </div>
+        <ol class="process-list" data-reveal>
+          <li><span>01</span><strong>Understand</strong><p>課題と意思決定を理解する</p></li>
+          <li><span>02</span><strong>Design</strong><p>使えるデータと検証方法を設計する</p></li>
+          <li><span>03</span><strong>Build</strong><p>小さく作り、結果を確かめる</p></li>
+          <li><span>04</span><strong>Improve</strong><p>運用を見据えて改善を続ける</p></li>
+        </ol>
+      </section>
+
+      <section class="section profile" id="profile">
+        <div class="profile-intro" data-reveal>
+          <p class="section-index">04 / PROFILE</p>
+          <p class="profile-kicker">DATA SCIENTIST / ANALYST</p>
+          <h2>技術と業務、<br>両方の言葉で話せます。</h2>
+        </div>
+        <div class="profile-body" data-reveal>
+          <p class="profile-lead">Webシステム開発を経験した後、AI・データサイエンス領域へ。需要予測を中心に、分析設計、モデル開発、クラウド環境での実行・運用改善に取り組んできました。</p>
+          <p>大切にしているのは、モデル精度だけを追わないこと。データの制約や現場の運用を理解し、分析結果を実際のアクションへつなげることを重視しています。</p>
+          <div class="career-line">
+            <div><span>01</span><p>Javaによる<br>Webシステム開発</p></div>
+            <div><span>02</span><p>AI・機械学習<br>プロジェクト</p></div>
+            <div><span>03</span><p>需要予測・分析<br>PoC / 運用改善</p></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="stack-section" aria-labelledby="stack-title">
+        <p class="section-index">05 / TOOLKIT</p>
+        <h2 id="stack-title">TECHNOLOGY STACK</h2>
+        <div class="stack-grid" data-reveal>
+          <div><span>LANGUAGE</span><p>Python / SQL / Java</p></div>
+          <div><span>DATA &amp; ML</span><p>pandas / NumPy / scikit-learn</p></div>
+          <div><span>AWS</span><p>S3 / Redshift / SageMaker / ECR</p></div>
+          <div><span>GCP / DATA</span><p>BigQuery / Cloud Storage</p></div>
+          <div><span>CONTAINER</span><p>GKE / Artifact Registry</p></div>
+          <div><span>CI/CD &amp; WORKFLOW</span><p>Cloud Build / Cloud Composer / Workflows</p></div>
+          <div><span>VISUALIZE</span><p>Matplotlib / Seaborn</p></div>
+          <div><span>ENGINEERING</span><p>Git / Container / Pipeline Design</p></div>
+        </div>
+      </section>
+
+      <section class="contact-section" id="contact">
+        <p class="section-index">06 / CONTACT</p>
+        <p class="contact-kicker">HAVE A PROJECT IN MIND?</p>
+        <h2>データの悩み、<br>まずは聞かせてください。</h2>
+        <p>需要予測、SQL分析、PoC支援など、課題がまだ整理されていない段階でも構いません。</p>
+        <a class="contact-button" href="mailto:iijima.suisuiaqua1101@gmail.com?subject=%E5%89%AF%E6%A5%AD%E6%A1%88%E4%BB%B6%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6%E3%81%AE%E3%81%94%E7%9B%B8%E8%AB%87"><span>メールで相談する</span><span aria-hidden="true">↗</span></a>
+        <p class="email-note">CONTACT / iijima.suisuiaqua1101@gmail.com</p>
+      </section>
+    </main>
+
+    <footer>
+      <a class="brand" href="#top"><span class="brand-mark" aria-hidden="true"></span><span>SUISUI / ANALYTICS</span></a>
+      <div>
+        <a href="https://github.com/suisuiaqua" target="_blank" rel="noreferrer">GitHub ↗</a>
+        <a href="mailto:iijima.suisuiaqua1101@gmail.com">Email ↗</a>
+      </div>
+      <p>© 2026 SUISUI ANALYTICS</p>
+    </footer>
+  </body>
+</html>
